@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>innixo/dypsst</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/library/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/preloader-default.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/demo-switcher.css" rel="stylesheet" type="text/css" />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+    <link rel="stylesheet" href="styles.css" />
+
+    
+    <link href="css-min/soccer.min.css" rel="stylesheet" type="text/css" />
+     <!-- <link href="css-min/hockey.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/basketball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/football.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/baseball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/dota.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/csgo.min.css" rel="stylesheet" type="text/css" />
+    
+    All libraries included in this css, concating rules in /grunt/cssmin.js
+    Use grunt default task for creating this files
+    
+    -->
+</head>
+
+<body>
+
+	<div class="preloader-wrapper" id="preloader">
+    <div class="motion-line dark-big"></div>
+    <div class="motion-line yellow-big"></div>
+    <div class="motion-line dark-small"></div>
+    <div class="motion-line yellow-normal"></div>
+    <div class="motion-line yellow-small1"></div>
+    <div class="motion-line yellow-small2"></div>
+</div>
+
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid">
+                <style>
+                    .top-barrr {
+                        background-color: #f8f9fa;
+                        padding: 5px 0;
+                    }
+            
+                    .containerrr {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                    }
+            
+                    .logo {
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
+            
+                    .logo img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+            
+                    .text-block {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #641616;
+                        text-align: center;
+                    }
+            
+                    .text-block span {
+                        font-size: 14px;
+                        color: #6c1919;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+            
+                    @media (max-width: 767px) {
+                        .logo-blockk {
+                            text-align: center;
+                        }
+            
+                        .text-block {
+                            margin-top: 5px;
+                        }
+                    }
+                </style>
+
+                <script>
+                    let lastScrollTop = 0;
+                    const topBar = document.querySelector('.top-bar');
+                    const topBarHeight = topBar.offsetHeight;
+                
+                    window.addEventListener('scroll', function() {
+                        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                        if (scrollTop > lastScrollTop) {
+                            // Downscroll code
+                            topBar.style.transform = `translateY(-${topBarHeight}px)`;
+                        } else {
+                            // Upscroll code
+                            topBar.style.transform = 'translateY(0)';
+                        }
+                        
+                        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+                    });
+                </script>
+                
+            </head>
+            <body>
+                <div class="top-barrr">
+                    <div class="containerrr">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xs-12 logo-blockk">
+                                <span><br></span>
+                                <div class="logooo centerImg">
+                                    <img alt="DPU-Logo" src="images/dpulogo.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="line-height: 1; margin-top: 10px;">
+                                <div class="text-block">
+                                    <span>Dr. D. Y. Patil Vidyapeeth, Pune<br></span>
+                                    <span>Dr. D. Y. Patil School of Science &amp; Technology</span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xs-12 ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--MAIN MENU WRAP BEGIN-->
+<div class="main-menu-wrap sticky-menu">
+    <div class="container">
+        <a href="index.html" class="custom-logo-link"><img src="images/soccer/logo.png alt="logo" class="custom-logo"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar">
+            <div class="collapse navbar-collapse" id="team-menu">
+                <ul class="main-menu nav">
+                    <li class="main-menu nav">
+                        <a href="index.html"><span>Home</span></a>
+
+                    </li>
+                    <li>
+                        <a href="index.html"><span>events</span></a>
+                        <ul>
+                            <li><a href="sport-championship-landing.html"><span>code-quest infinity </span></a></li>
+                            <li>
+                                <a href="esport-championship-landing.html"><span>scrimmage<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+                                <ul>
+                                    <li><a href="esport-championship-landing.html"><span>valorant</span></a></li>
+                                    <li><a href="esport-championship-landing.html"><span>cs-go</span></a></li>
+                                </ul>	
+                            </li>
+                            <li><a href="broadcasts.html"><span>ruminate</span></a></li>
+                            <li><a href="upcoming-match.html"><span>glitch-hunt</span></a></li>
+                            <li><a href="live-text-stream.html"><span>guiding lights</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="staff.html"><span>Team</span></a>
+                        <ul>
+                            <li><a href="player.html"><span>player first page</span></a></li>
+                            <li><a href="player-second-page.html"><span>player second page</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html"><span>News</span></a></li>
+                    <!--<li>
+                        <a href="#other"><span>other</span></a>
+                        <ul>
+                            <li><a href="404.html"><span>404</span></a></li>
+                            <li><a href="offline.html"><span>offline</span></a></li>
+                            <li><a href="coming-soon.html"><span>comming soon</span></a></li>
+                            <li><a href="search.html"><span>search</span></a></li>
+                            <li><a href="donations.html"><span>donations</span></a></li>
+                            <li><a href="trophies.html"><span>trophies</span></a></li>
+                            <li><a href="about-club.html"><span>about club</span></a></li>
+
+                        </ul>
+                    </li>-->
+                    	
+                </ul>
+            </div>       
+        </nav>
+    </div>
+</div>
+<!--MAIN MENU WRAP END-->
+
+
+    <div class="main-slider-section">
+    <div class="main-slider">
+        <div id="main-slider" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                   <!-- <div class="main-slider-caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="match-date">26 Sep 2016 / 9:30 PM / city arena</div>
+                                    <div class="team"> Team Name 1
+                                        <div class="big-count">
+                                            2:0
+                                        </div>
+                                        Team Name 2
+                                    </div>                                    
+                                    <div class="booking">
+                                        <a href="matches-list.html">
+                                            Match Page
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="main-slider-caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="match-date">Dr. D. Y. Patil School of Science &amp; Technology  <BR>&amp;<br>swastik  presents</div>
+                                    <div class="team">innixo
+                                    </div>                                        
+                                    <div class="counter" data-date="2024-03-06T00:00:00"> <!-- Set the correct date here -->
+                                        <ul>
+                                            <li>
+                                                <div class="digit days"></div>
+                                                <div class="descr">Days</div>
+                                            </li>
+                                            <li>
+                                                <div class="digit hours"></div>
+                                                <div class="descr">Hours</div>
+                                            </li>
+                                            <li>
+                                                <div class="digit minutes"></div>
+                                                <div class="descr">Minutes</div>
+                                            </li>
+                                            <li>
+                                                <div class="digit seconds"></div>
+                                                <div class="descr">Seconds</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <script>
+                    // Get the target date from data-date attribute
+                    var targetDate = new Date(document.querySelector('.counter').getAttribute('data-date'));
+            
+                    // Function to update the countdown
+                    function updateCountdown() {
+                        var currentDate = new Date();
+                        var difference = targetDate - currentDate;
+            
+                        var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            
+                        // Update the HTML elements
+                        document.querySelector('.digit.days').innerText = days;
+                        document.querySelector('.digit.hours').innerText = hours;
+                        document.querySelector('.digit.minutes').innerText = minutes;
+                        document.querySelector('.digit.seconds').innerText = seconds;
+                    }
+            
+                    // Update the countdown every second
+                    setInterval(updateCountdown, 1000);
+            
+                    // Initial call to update countdown immediately
+                    updateCountdown();
+                </script>
+
+            </div>
+
+            <!-- Controls 
+            <a class="nav-arrow left-arrow" href="#main-slider" role="button" data-slide="prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                <span class="sr-only"></span>
+            </a>
+            <a class="nav-arrow right-arrow" href="#main-slider" role="button" data-slide="next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <span class="sr-only"></span>
+            </a>
+
+            <div class="event-nav">
+                <div class="container">
+                    <div class="row no-gutter carousel-indicators">-->
+
+            
+
+                       <!--<div class="col-sm-4 active" data-slide-to="0" data-target="#main-slider">
+                            <a href="#" class="nav-item">
+                                <span class="championship">National cup - quarterfinal</span>
+                                <span class="teams-wrap">
+                                    <span class="team"><img src="images/soccer/team-logo1.png" alt="team-logo"></span>
+                                    <span class="score">
+                                        <span>1:0</span>
+                                    </span>
+
+                                    <span class="team1">
+                                        <span><img src="images/soccer/team-logo2.png" alt="team-logo"></span>
+                                    </span>
+                                </span>
+                                <span class="game-result">(5-4) penalties</span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4" data-slide-to="1" data-target="#main-slider">
+                            <a href="#" class="nav-item">
+                                <span class="championship">Team Name 1 - Team Name 2</span>
+                                <span class="teams-wrap">
+
+                                    <span class="team"><img src="images/soccer/team-logo5.png" alt="team-logo"></span>
+                                    <span class="score countdown" data-date="1534185200000">
+                                        <span class="days"></span>
+                                        <span class="hours"></span>
+                                        <span class="minutes"></span>
+                                        <span class="seconds"></span>
+                                    </span>
+
+                                    <span class="team1">
+                                        <span><img src="images/soccer/team-logo1.png" alt="team-logo"></span>
+                                    </span>
+
+                                </span>
+                                <span class="game-result">26 Sep 2016 / 9:30 PM / city arena</span>
+                            </a>
+                        </div>
+                        
+                        <div class="col-sm-4" data-slide-to="2" data-target="#main-slider">
+                            <a href="#" class="nav-item">
+                                <span class="championship">National cup - quarterfinal</span>
+                                <span class="teams-wrap">
+                                    <span class="team"><img src="images/soccer/team-logo3.png" alt="team-logo"></span>
+                                    <span class="score">
+                                        <span>VS</span>
+                                    </span>
+
+                                    <span class="team1">
+                                        <span><img src="images/soccer/team-logo4.png" alt="team-logo"></span>
+                                    </span>
+                                </span>
+                                <span class="game-result">(5-4) penalties</span>
+                            </a>
+                        </div>-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   <div class="row" style="background-color: #f9faff">
+    
+   <h6><p></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;events</h6><p></h6>
+        <div class="col-md-3 col-sm-6">
+            <div class="store-list-item">
+                <div>
+                    <a href="">
+                        <img src="images/common/store-item-img.jpg" alt="product">
+                    </a>
+                    <div class="info">
+                        <span class="name">code-quest infinity </span>
+                        <span class="price">07 march 2024</span>	
+                        <div class="btn-wrap">
+                            <a href="esport-championship-landing.html">
+                                <button class="btn small">details</button>
+                              </a> 
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="store-list-item">
+                <div>
+                    <a href="">
+                        <img src="images/common/product-2.jpg" alt="product">
+                    </a>
+                    <div class="info">
+                        <span class="name">scrimmage </span>
+                        <span class="price">06,07 march 2024</span>	
+                        <div class="btn-wrap">
+                            <a href="esport-championship-landing.html">
+                                <button class="btn small">details</button>
+                              </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="store-list-item">
+                <div>
+                    <a href="">
+                        <img src="images/common/product-3.jpg" alt="product">
+                    </a>
+                    <div class="info">
+                        <span class="name">ruminate </span>
+                        <span class="price">06,07 march 2024</span>	
+                        <div class="btn-wrap">
+                            <a href="esport-championship-landing.html">
+                                <button class="btn small">details</button>
+                              </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="store-list-item">
+                <div>
+                    <a href="">
+                        <img src="images/common/product-4.jpg" alt="product">
+                    </a>
+                    <div class="info">
+                        <span class="name">glitch hunt </span>
+                        <span class="price">06 march 2024</span>	
+                        <div class="btn-wrap">
+                            <a href="esport-championship-landing.html">
+                                <button class="btn small">details</button>
+                              </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="store-list-item">
+                <br>
+                <div>
+                    <a href="">
+                        <img src="images/common/product-2.jpg" alt="product">
+                    </a>
+                    <div class="info">
+                        <span class="name">guiding lights </span>
+                        <span class="price">07 march 2024</span>	
+                        <div class="btn-wrap">
+                            <a href="esport-championship-landing.html">
+                                <button class="btn small">details</button>
+                              </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="store-list-item">
+                <br>
+                <div>
+                    <a href="">
+                        <img src="images/common/product-2.jpg" alt="product">
+                    </a>
+                    <div class="info">
+                        <span class="name">exibition</span>
+                        <span class="price">07 march 2024</span>	
+                        <div class="btn-wrap">
+                            <a href="esport-championship-landing.html">
+                                <button class="btn small">details</button>
+                              </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- ESPORT CHAMPIONSHIP ABOUT TROPHEY BEGIN -->
+<div id="about" class="esport-championship-about-trophey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h5 class="esport-landing-header">About location</h5>
+                <div class="trophey-wrap">
+                    <span>
+                        <h2 style="color: rgb(255, 255, 255);">Dr. D. Y. Patil School of Science and Technology</h2>
+                        <span class="date">Address: Bengaluru - Mumbai Hwy, Tathawade, Pimpri-Chinchwad, Maharashtra 411033</span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h5 class="esport-landing-header">About Event</h5>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">prize pool</span>
+                            <span class="info">30,000 & more </span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">Date of event</span>
+                            <span class="info">6 & 7 march</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ESPORT CHAMPIONSHIP ABOUT TROPHEY END -->
+        
+    <div class="store-banner position-relative">
+		<div class="store-banner-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="title">event<span>brochure</span></div>
+                        <a href="path_to_your_pdf_file.pdf" download>
+                            <button class="btn small">details</button>
+                          </a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+        <!--MAIN SPONSOR SLIDER BEGIN
+        <div class="main-sponsor-slider-background">
+            <div id="main-sponsor-slider" class="carousel slide main-sponsor-slider" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-4 text-center">
+                                    <img class="sponsor-icons" src="images/common/sponsor-img.png" alt="sponsor-image">	
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <img class="sponsor-icons" src="images/common/sponsor-img1.png" alt="sponsor-image">	
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <img  class="sponsor-icons dota-csgo-image" src="images/common/sponsor-img2.png" alt="sponsor-image">	
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-4 text-center">
+                                    <img class="sponsor-icons" src="images/common/sponsor-img.png" alt="sponsor-image">	
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <img  class="sponsor-icons" src="images/common/sponsor-img1.png" alt="sponsor-image">	
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <img class="sponsor-icons dota-csgo-image" src="images/common/sponsor-img2.png" alt="sponsor-image">
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                    <!-- Controls 
+                    <a class="nav-arrow left-arrow" href="#main-sponsor-slider" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="nav-arrow right-arrow" href="#main-sponsor-slider" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                    </a>
+                </div>	
+            </div>
+        </div>
+    </div>   
+<br><br>-->
+
+
+
+
+    
+   <!--LANDING SPORT CONTACT BEGIN-->
+   <div class="lading-sport-contact">
+    <div class="wrapper-img">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.0983097680773!2d73.6513081217041!3d18.614647432423574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b97bb3ad76d7%3A0x9d8820ff96a308dd!2sDr.D.%20Y.%20Patil%20School%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1708234195880!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6">
+                <div class="information-wrap">
+                    <div>
+                        <span class="header-welcom">contact</span>
+                        <span class="header-arena">us</span>
+                    </div>
+                    <span>
+                        <span>Bengaluru - Mumbai Hwy, Tathawade, Pimpri-Chinchwad, Maharashtra 411033</span>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:team@email.com">team@email.com</a></li>
+                        <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span>+61 3 8376 6284</span></li>
+                        <span>06-07 march</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--LANDING SPORT CONTACT END-->
+    <!--FOOTER BEGIN
+<footer class="footer">
+    <div class="wrapper-overfllow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-left">
+                        <div class="wrap">
+                            <a href="index.html" class="foot-logo"><img src="images/soccer/footer-logo.png" alt="footer-logo"></a>
+                            <p>Activated charcoal trust fund ugh prism af, beard marfa air plant stumptown gastropub farm-to-table jianbing.</p>
+                            <ul class="foot-left-menu">
+                                <li><a href="staff.html">First team</a></li>
+                                <li><a href="staff.html">Second team</a></li>
+                                <li><a href="amateurs.html">Amateurs</a></li>
+                                <li><a href="donations.html">Donation</a></li>
+                                <li><a href="trophies.html">trophies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-offset-1">
+                    <div class="foot-news">
+                        <h4>Recent news</h4>
+                        <div class="item">
+                            <a href="news.html" class="image"><img class="img-responsive" src="images/soccer/foot-news-img.jpg" alt="news-image"></a>
+                            <a href="news.html" class="name">When somersaulting Sanchez shouldered Mexico’s hopes</a>
+                            <a href="news.html" class="date">25 Sep 2016</a>
+                            <span class="separator">in</span>
+                            <a href="news.html" class="category">Highlights</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-4 col-sm-12">
+                    <div class="foot-contact">
+                        <h4>Contact us</h4>
+                        <ul class="contact-list">
+                            <li><i class="fa fa-flag" aria-hidden="true"></i><span>276 Upper Parliament Street, Liverpool L8, Great Britain</span></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:team@email.com">team@email.com</a></li>
+                            <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span>+61 3 8376 6284</span></li>
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    
+
+    <script type="text/javascript" src="js/library/jquery.js"></script>
+<script type="text/javascript" src="js/library/jquery-ui.js"></script>
+<script type="text/javascript" src="js/library/bootstrap.js"></script>
+<script type="text/javascript" src="js/library/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/library/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/library/jcarousel.connected-carousels.js"></script>
+<script type="text/javascript" src="js/library/owl.carousel.js"></script>
+<script type="text/javascript" src="js/library/progressbar.js"></script>
+<script type="text/javascript" src="js/library/jquery.bracket.min.js"></script>
+<script type="text/javascript" src="js/library/chartist.js"></script>
+<script type="text/javascript" src="js/library/Chart.js"></script>
+<script type="text/javascript" src="js/library/fancySelect.js"></script>
+<script type="text/javascript" src="js/library/isotope.pkgd.js"></script>
+<script type="text/javascript" src="js/library/imagesloaded.pkgd.js"></script>
+
+<script type="text/javascript" src="js/jquery.team-coundown.js"></script>
+<script type="text/javascript" src="js/matches-slider.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/matches_broadcast_listing.js"></script>
+<script type="text/javascript" src="js/news-line.js"></script>
+<script type="text/javascript" src="js/match_galery.js"></script>
+<script type="text/javascript" src="js/main-club-gallery.js"></script>
+<script type="text/javascript" src="js/product-slider.js"></script>
+<script type="text/javascript" src="js/circle-bar.js"></script>
+<script type="text/javascript" src="js/standings.js"></script>
+<script type="text/javascript" src="js/shop-price-filter.js"></script>
+<script type="text/javascript" src="js/timeseries.js"></script>
+<script type="text/javascript" src="js/radar.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/diagram.js"></script>
+<script type="text/javascript" src="js/bi-polar-diagram.js"></script>
+<script type="text/javascript" src="js/label-placement-diagram.js"></script>
+<script type="text/javascript" src="js/donut-chart.js"></script>
+<script type="text/javascript" src="js/animate-donut.js"></script>
+<script type="text/javascript" src="js/advanced-smil.js"></script>
+<script type="text/javascript" src="js/svg-path.js"></script>
+<script type="text/javascript" src="js/pick-circle.js"></script>
+<script type="text/javascript" src="js/horizontal-bar.js"></script>
+<script type="text/javascript" src="js/gauge-chart.js"></script>
+<script type="text/javascript" src="js/stacked-bar.js"></script>
+
+<script type="text/javascript" src="js/library/chartist-plugin-legend.js"></script>
+<script type="text/javascript" src="js/library/chartist-plugin-threshold.js"></script>
+<script type="text/javascript" src="js/library/chartist-plugin-pointlabels.js"></script>
+
+<script type="text/javascript" src="js/treshold.js"></script>
+<script type="text/javascript" src="js/visible.js"></script>
+<script type="text/javascript" src="js/anchor.js"></script>
+<script type="text/javascript" src="js/landing_carousel.js"></script>
+<script type="text/javascript" src="js/landing_sport_standings.js"></script>
+<script type="text/javascript" src="js/twitterslider.js"></script>
+<script type="text/javascript" src="js/champions.js"></script>
+<script type="text/javascript" src="js/landing_mainnews_slider.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/video_slider.js"></script>
+<script type="text/javascript" src="js/footer_slides.js"></script>
+<script type="text/javascript" src="js/player_test.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+
+    
+    
+
+	<!--DEMO SWITCHER BEGIN
+<a class="demo-switcher-small-button">
+    <i class="fa fa-cog fa-spin fa-fw margin-bottom"></i>
+</a>
+<div class="demo-switcher"> 
+    <div class="switcher-header">
+        <p><i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>switcher</p>
+    </div>
+    <div class="switcher-menu">
+        <div class="special-list">
+        </div>
+        <ul class="light-list demo-swith">
+            <li><a href="indexa369.html?scheme=soccer" data-scheme="soccer"><span class="soccer"></span>Soccer</a></li>
+            <li><a href="index70c2.html?scheme=amfootball" data-scheme="amfootball"><span class="football"></span>Football</a></li>
+            <li><a href="index075a.html?scheme=hockey" data-scheme="hockey"><span class="hockey"></span>Hockey</a></li>
+            <li><a href="indexc4b0.html?scheme=baseball" data-scheme="baseball"><span class="baseball"></span>Baseball</a></li>
+            <li><a href="index9439.html?scheme=basketball" data-scheme="basketball"><span class="basketball"></span>Basketball</a></li>
+        </ul>
+        <ul class="dark-list demo-swith">
+            <li><a href="index8bc9.html?scheme=csgo" data-scheme="csgo"><span class="csgo"></span>CS:GO</a></li>
+            <li><a href="indexd51a.html?scheme=dota" data-scheme="dota"><span class="dota"></span>DOTA</a></li>
+        </ul>
+    </div>
+</div>
+DEMO SWITCHER END-->
+
+<script type="text/javascript" src="dev-assets/demo-switcher.js"></script>
+</body>
+
+
+</html>
